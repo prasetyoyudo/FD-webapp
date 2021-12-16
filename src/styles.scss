@@ -1,1 +1,488 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$white:                           #fff;
+$gray-100:                        #f0f3f5;
+$gray-200:                        #c2cfd6;
+$gray-300:                        #a4b7c1;
+$gray-400:                        #869fac;
+$gray-500:                        #678898;
+$gray-600:                        #536c79;
+$gray-700:                        #3e515b;
+$gray-800:                        #29363d;
+$gray-900:                        #151b1e;
+$black:                           #000 !default;
+
+
+$blue:                            #20a8d8;
+$lightskyblue:                    #e1ecff;
+$indigo:                          #6610f2 !default;
+$purple:                          #6f42c1 !default;
+$pink:                            #e83e8c !default;
+$red:                             #f86c6b;
+$orange:                          #f8cb00;
+$yellow:                          #ffc107 !default;
+$yellow-sun:                      #ffa500;
+$green-300:                       #84BD00;
+$green:                           #4dbd74;
+$teal:                            #20c997 !default;
+$cyan:                            #63c2de;
+$navy:                            #0064D3;
+$sky:                             #44AFE6;
+
+$colors: (
+  blue:                           $blue,
+  indigo:                         $indigo,
+  purple:                         $purple,
+  pink:                           $pink,
+  red:                            $red,
+  orange:                         $orange,
+  yellow:                         $yellow,
+  green:                          $green,
+  teal:                           $teal,
+  cyan:                           $cyan,
+  white:                          $white,
+  gray:                           $gray-600,
+  gray-dark:                      $gray-800,
+  leaf-green:                     $green-300,
+  yellow-sun:                     $yellow-sun    
+);
+
+$theme-colors: (
+  primary:                        $blue,
+  secondary:                      $gray-300,
+  success:                        $green,
+  info:                           $cyan,
+  warning:                        $yellow,
+  danger:                         $red,
+  light:                          $gray-100,
+  dark:                           $gray-800,
+  navy:                           $navy,
+  sky:                            $sky,
+  leaf-green:                     $green-300,
+  yellow-sun:                     $yellow-sun    
+);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// HEADER MENU
+header{
+
+  .fa{
+    font-size:18px;
+  }
+
+  .navbar-toggler{
+    line-height: 3;
+  }
+
+  .main-logo{
+    max-height: 38px;
+    width:100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .main-logo.lg-logo{
+    max-height: 38px;
+    width:100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 60px;
+  }
+
+  .navbar-brand{
+    line-height: 3;
+  }
+
+  .navbar{
+    padding: 10px 0;
+    a{
+      font-size: 18px;
+    }
+  }
+
+  .nav.justify-content-end{
+    display: -webkit-box;
+  }
+
+  .nav-item{
+    position: relative;
+    margin-left: -6rem;
+  }
+
+  .dropdown-menu {
+    width: 45%;
+  }
+}
+
+.button-login {
+    padding: 1rem 0.8rem;
+}
+
+.img-logo-top {
+  width: 10%;
+}
+
+.img-logo {
+  width: 30%;
+}
+
+hr.header-separation {
+  margin-top: 0;
+}
+
+span.submenu-header {
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.top-frame {
+  width: 970px;
+  height: 50px;
+  background-color: $gray-300;
+}
+
+.billboard-frame {
+  width: 970px;
+  height: 250px;
+  background-color: $gray-300;
+}
+
+.hamburger-menu {
+  position: relative
+}
+
+// EDITOR CHOICE SECTION
+.editor-choice-section {
+  margin-top: 4rem;
+}
+
+h5.subtitle-editor-section {
+  font-weight: bold;
+}
+
+span.tagline-editor-section {
+  color: #b2bec3;
+}
+
+img.card-img-top {
+  position: absolute;
+  top: -35px;
+  left: 8%;
+  width: 25%;
+  border-radius: 50%;
+}
+
+span.editor-name {
+  top: -70px !important;
+  position: relative;
+  left: 40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span.editor-title {
+  top: -70px !important;
+  position: relative;
+  left: 40%;
+  font-size: 12px;
+  color: #b2bec3;
+}
+
+p.card-text{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.card-description {
+  font-size: 14px;
+}
+
+p.card-rating {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0.3rem;
+}
+
+.star-image {
+  margin-left: -2rem;
+}
+
+// BANNER TAGLINE PRODUCT SECTION
+.banner-tagline-product{
+  background-color: #FDDAE0;
+  margin-top: 4rem;
+}
+
+.image-banner-section {
+  padding-left: 0;
+}
+
+h4.subtitle-banner-product {
+  font-weight: bold;
+}
+
+.banner-tagline-product{
+  font-size: 18px;
+}
+
+img.image-banner-product {
+  width: 96%;
+}
+
+.button-tagline-product{
+  width: 240px;
+  height: 60px;
+  border-radius: 30px;
+  border: solid 1px $white;
+}
+
+p.card-subdescription {
+  color: #b2bec3;
+  font-size: 14px;
+  margin-top: -1rem;
+  margin-bottom: 0;
+}
+
+p.card-product-tagline {
+  color: #c44569;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.internal-campaign-banner {
+  width: 970px;
+  height: 250px;
+  background-color: $gray-300;
+}
+
+// ARTICLE SECTION
+.article-section {
+  margin-top: 4rem;
+}
+
+h5.subtitle-article-section {
+  font-weight: bold;
+}
+
+span.tagline-article-section {
+  color: #b2bec3;
+}
+
+p.article-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+span.see-more {
+  color: #c44569;
+}
+
+span.author-name {
+  font-size: 13px;
+}
+
+span.article-published {
+  color: #b2bec3;
+  font-size: 13px;
+}
+
+// REVIEW SECTION
+.review-section {
+  margin-top: 4rem;
+}
+
+h5.subtitle-review-section {
+  font-weight: bold;
+}
+
+span.tagline-review-section {
+  color: #b2bec3;
+}
+
+p.review-product-name {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+p.review-product-desc {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.review-ads {
+  width: 300px;
+  height: 250px;
+  background-color: $gray-300;
+}
+
+.star-review {
+  margin-left: 0;
+}
+
+.review-comment {
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+img.card-img-bot {
+  position: absolute;
+  top: 245px;
+  left: 36%;
+  width: 18% !important;
+  border-radius: 50%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  color: #20a8d8;
+}
+
+p.review-name {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+p.review-subname {
+  font-size: 13px;
+  text-align: center;
+  color: #b2bec3;;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #c44569;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #F4BEC9;
+}
+
+// POPULAR GROUP 
+.popular-group {
+  margin-top: 3rem;
+}
+
+h5.subtitle-popular-group {
+  font-weight: bold;
+}
+
+span.tagline-popular-group {
+  color: #b2bec3;
+}
+
+p.popular-sub-tagline {
+  font-size: 13px;
+  margin-top: 0.3rem;
+}
+
+// LATEST VIDEO
+.latest-video {
+  margin-top: 4rem;
+}
+
+h5.subtitle-latest-video {
+  font-weight: bold;
+}
+
+span.tagline-latest-video {
+  color: #b2bec3;
+}
+
+// TRENDING PRODUCT 
+.trending-product {
+  margin-top: 4rem;
+}
+
+h5.subtitle-trending-product {
+  font-weight: bold;
+}
+
+span.tagline-trending-product {
+  color: #b2bec3;
+}
+
+p.trending-sub-tagline {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+// TOP BRAND
+.top-brand {
+  margin-top: 3rem;
+}
+
+h5.subtitle-top-brand {
+  font-weight: bold;
+}
+
+span.tagline-top-brand {
+  color: #b2bec3;
+}
+
+p.bottom-top-brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p.subtagline-top-brand {
+  font-size: 15px;
+}
+
+.footer{
+  font-size: 14px;
+}
+
+.footer .menu span.tagline-footer {
+  font-weight: bold;
+}
+
+.footer .menu a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 15px;;
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px){
+  .footer .menu .ft-menu{
+    margin-top:5px;
+    border-right: none;
+    padding:0;
+    margin-left: 0px;
+  }
+
+  .footer .menu {
+    margin-top: 10px;
+    padding-left: 17px;
+  }
+}
+
+.bottom-frame {
+    width: 970px;
+    height: 50px;
+    background-color: $gray-300;
+    margin-bottom: 0;
+}

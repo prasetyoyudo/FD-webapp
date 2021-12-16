@@ -1,0 +1,130 @@
+<header>
+    <div class="head-section">
+      <div class="container-fluid">
+        <div class="row">
+              <div class="col-lg-2 bd-highlight mb-3">
+                <button class="navbar-toggler" type="button" appMobileSidebarToggler>&#9776;</button>
+                <img src="../../assets/images.jpg" class="img-fuid w-75 " alt="">
+
+            </div>
+            <div class="col-lg-8 bd-highlight mb-3 form-search pt-4">
+                <form [formGroup]="searchForm">
+                    <div class="controls mb-3" id="form-login">
+                      <input 
+                        type            ="text" 
+                        class           ="form-control"
+                        formControlName ="search"
+                        placeholder     ="Search products, article, topic, brands, etc">
+                      <!-- <control-messages [control]="loginForm.controls.email"></control-messages> -->
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2  bd-highlight pt-4">
+              <button class="btn btn-danger"> Login / Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="header-separation">
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <span class="submenu-header">SKINCARE</span>
+            <span class="submenu-header">MAKE UP</span>
+            <span class="submenu-header">BODY</span>
+            <span class="submenu-header">HAIR</span>
+            <span class="submenu-header">FRAGRANCE</span>
+            <span class="submenu-header">NAILS</span>
+            <span class="submenu-header">TOOLS</span>
+            <span class="submenu-header">BRANDS</span>
+        </div>
+    </div>
+    <hr class="second-header-separation">
+
+</header>
+
+<div class="app-body mt-0">
+    <main role="main">
+        <router-outlet></router-outlet>
+    </main>
+</div>
+
+<footer class="pt-5">
+    <hr class="header-separation">
+
+    <!-- FOOTER -->
+    <div class="container footer " id="contact">
+
+      <div class="row">
+  
+        <div class="col-lg-3 mt-3">
+          <div class="menu">
+            <div class="ft-menu">
+                <a href=""  class="ft-menu">About Us</a>
+              </div>
+            <div class="ft-menu">
+              <a href=""  class="ft-menu">Contact</a>
+            </div>
+            <div class="ft-menu">
+              <a href=""  class="ft-menu">Feedback</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 mt-3">
+          <div class="menu">
+            <div class="ft-menu">
+                <a href=""  class="ft-menu">Terms & Condition</a>
+              </div>
+            <div class="ft-menu">
+              <a href=""  class="ft-menu">Privacy Policy</a>
+            </div>
+            <div class="ft-menu">
+              <a href=""  class="ft-menu">Help</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 mt-3">
+          <div class="menu">
+            <div class="ft-menu">
+                <a href=""  class="ft-menu">Awards</a>
+              </div>
+            <div class="ft-menu">
+              <a href=""  class="ft-menu">Newsletter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mt-3">
+            <div class="menu">
+              <div class="ft-menu">
+                  <a href=""  class="ft-menu">Download Our Mobile App</a>
+              </div>
+              <div class="ft-menu">
+                <img src="../../../assets/mobile.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-5">
+              <img src="../../../assets/images.jpg" class="img-fluid w-50" alt="">
+              <p class=" ">Copyright © 2015 - 2017 Female Daily Network . All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-7">
+              <img src="../../../assets/socmed.png" class="img-fluid float-right w-25 mt-5" alt="">
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-center">
+            <div class="bottom-frame">
+                <h3 class="text-center pt-1">Bottom Frame 970x50, 468x60, 320x50 </h3 >
+            </div>
+        </div>
+    </div>
+
+  </footer>
+  

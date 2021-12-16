@@ -1,0 +1,366 @@
+<div class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <div class="top-frame">
+            <h3 class="text-center pt-1">Top Frame 970 x 50 </h3 >
+        </div>
+        <br>
+    </div>
+
+    <div class="d-flex justify-content-center pt-3">
+        <div class="billboard-frame">
+            <h3 class="text-center pt-5">Billboard 970 x 250 </h3 >
+        </div>
+    </div>
+</div>
+
+<div class="container editor-choice-section">
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h5 class="subtitle-editor-section">Editor's Choice</h5>
+            <span class="tagline-editor-section">Curated With Love</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" *ngFor="let editorData of editorChoices">
+            <div class="card" style="width: 12rem;">
+                <img src="../../../assets/team-1.jpg" class="card-img-top" alt="...">
+                <span class="editor-name">{{editorData.editor}}</span>
+                <span class="editor-title">{{editorData.role}}</span>
+                <div class="card-body">
+                    <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class="card-rating">{{editorData.product.rating}}</p>
+                        </div>
+                        <div class="col-lg-8 star-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="card-text">{{editorData.product.name}}</p>
+                    <p class="card-description">{{editorData.product.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid banner-tagline-product ">
+    <div class="row">
+        <div class="col-lg-3 image-banner-section">
+            <img src="../../../assets/banner1.png" class="img-fluid image-banner-product" alt="">
+        </div>
+        <div class="col-lg-3 pt-5 pb-5">
+            <h4 class="subtitle-banner-product">
+                Looking for products that are just simply perfect for you?
+            </h4>
+            <p>Here are some products that we believe match your skin, hair and body! Have we mentioned that they solve your concerns too?</p>
+            <button class="btn btn-danger float-right mt-2">
+                <span>See My Matches</span>
+            </button>
+        </div>
+        <div class="col-lg-6 pr-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
+                            <p class="card-product-tagline">Match Skin Type</p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="card-rating">5.0</p>
+                                </div>
+                                <div class="col-lg-8 star-image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="card-text">VAL BY VALERIE THOMAS</p>
+                            <p class="card-description">Pure Pressed Blush</p>
+                            <p class="card-subdescription">Neutral Rose</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
+                            <p class="card-product-tagline">Match Skin Type</p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="card-rating">5.0</p>
+                                </div>
+                                <div class="col-lg-8 star-image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="card-text">VAL BY VALERIE THOMAS</p>
+                            <p class="card-description">Phito Pigmen Liquid</p>
+                            <p class="card-subdescription">Neutral Rose</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
+                            <p class="card-product-tagline">Match Skin Type</p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="card-rating">5.0</p>
+                                </div>
+                                <div class="col-lg-8 star-image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="card-text">VAL BY VALERIE THOMAS</p>
+                            <p class="card-description">Pure Pressed Blush</p>
+                            <p class="card-subdescription">Neutral Rose</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid internal-campaign-section">
+    <div class="d-flex justify-content-center">
+        <div class="internal-campaign-banner pt-5 ">
+            <h3 class="text-center pt-1">Horizontal 970x250 </h3 >
+            <h3 class="text-center pt-1">(Internal Campaign Only)</h3>
+        </div>
+        <br>
+    </div>
+</div>
+
+<div class="container article-section">
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h5 class="subtitle-article-section">Latest Article</h5>
+            <span class="tagline-article-section">So you can make better purchase decision</span>
+            <span class="float-right see-more">See More ></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mb-3" *ngFor="let article of articles">
+            <img src="{{article.image}}" class="img-fluid" alt="">
+            <p class="article-title">{{article.title}}</p>
+            <p><span class="author-name">{{article.author}}</span> | <span class="article-published">{{article.published_at}}</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="container review-section">
+    <div class="row mb-4">
+        <div class="col-lg-8">
+            <h5 class="subtitle-review-section">Latest Reviews</h5>
+            <span class="tagline-review-section">So you can make better purchase decision</span>
+            <span class="float-right see-more" style="padding-right: 3rem;">See More ></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let review of reviews">
+                  <ng-template carouselSlide>
+                    <div class="card" style="width: 20rem; margin-top: 0;">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="{{review.product.image}}" class="img-fluid mb-2" alt="">
+    
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="review-product-name">{{review.product.name}}</p>
+                                    <p class="review-product-desc">{{review.product.desc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="row mt-3">
+                                <div class="col-lg-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="review-comment">{{review.comment}}</p>
+                        </div>
+                    </div>
+                    <div class="card-body pb-5" style="width: 20rem;">
+                        <img src="../../../assets/team-1.jpg" class="card-img-bot" alt="...">
+                        <p class="review-name">{{review.user}}</p>
+                        <p class="review-subname">Combination Skin, 25-29 </p>
+                    </div>
+                  </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+        <div class="col-lg-4">
+            <div class="review-ads pt-5 ">
+                <h3 class="text-center pt-1">MR 2 </h3 >
+                <h3 class="text-center pt-1">300x250</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container popular-group">
+    <div class="row mb-2">
+        <div class="col-lg-12">
+            <h5 class="subtitle-popular-group">Popular Group</h5>
+            <span class="tagline-popular-group">Where the beauty TALK are</span>
+            <span class="float-right see-more pr-5">See More ></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let popularItem of popularItems">
+            <div class="card" style="width: 14rem;">
+                <div class="card-body">
+                    <img src="../../../assets/{{popularItem.image}}" class="img-fluid" alt="">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-center card-text">{{popularItem.tagline}}</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                        </div>
+                        <div class="col-lg-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </div>
+                        <div class="col-lg-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+                                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-center popular-sub-tagline">{{popularItem.subtagline}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container latest-video">
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h5 class="subtitle-latest-video">Latest Video</h5>
+            <span class="tagline-latest-video">Watch and leard, ladies</span>
+            <span class="float-right see-more pr-5">See More ></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <youtube-player
+                videoId     ="fuuxdx9QA1k"
+                (ready)     ="savePlayer($event)"
+                (change)    ="onStateChange($event)"
+                [width]     = 680
+                [height]    = 360
+            ></youtube-player>
+        </div>
+        <div class="col-lg-4">
+            <youtube-player
+                videoId     ="fuuxdx9QA1k"
+                (ready)     ="savePlayer($event)"
+                (change)    ="onStateChange($event)"
+                [width]     = 320
+                [height]    = 180
+            ></youtube-player>
+            <div class="row">
+                <div class="col-lg-12">
+                    <youtube-player
+                        videoId     ="fuuxdx9QA1k"
+                        (ready)     ="savePlayer($event)"
+                        (change)    ="onStateChange($event)"
+                        [width]     = 320
+                        [height]    = 180
+                    ></youtube-player>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container trending-product">
+    <div class="row mb-2">
+        <div class="col-lg-12">
+            <h5 class="subtitle-trending-product">Latest Video</h5>
+            <span class="tagline-trending-product">Watch and leard, ladies</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <owl-carousel-o [options]="trendingOptions">
+                <ng-container *ngFor="let product of trendingProducts">
+                  <ng-template carouselSlide>
+                    <div class="card" style="width: 12rem; margin-top: 0; border: 0;">
+                        <div class="card-header" style="border: 0;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="../../../assets/{{product.image}}" class="img-fluid mb-2" alt="">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="card-rating">5.0</p>
+                                </div>
+                                <div class="col-lg-8 star-image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill pr-1" viewBox="0 0 16 16" *ngFor="let editorData of editorChoices">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="card-text">{{product.name}}</p>
+                                    <p class="trending-sub-tagline">{{product.subdesc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<div class="container top-brand">
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h5 class="subtitle-top-brand">Top Brands</h5>
+            <span class="tagline-top-brand">We all know and love</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <img src="../../../assets/banner2.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="bottom-top-brand"> Female Daily - Find everything you want to know about beauty on Female Daily</p>
+            <p class="subtagline-top-brand">Product Reviews, Tips & Tricks, Expert and Consumer Opinions, Beauty Tutorials, Discussions, Beauty Workshops, anything! <br> We are here to be your friendly solution to all things beauty, inside and out! </p>
+        </div>
+    </div>
+</div>
