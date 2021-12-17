@@ -70,14 +70,14 @@ export class HomepageComponent implements OnInit {
   ]
   trendingProducts          = [
     { 'image' : 'product1.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'C E Ferulic'},
-    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless '},
+    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless Serum '},
     { 'image' : 'product3.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'Pure Pressed Blush'},
     { 'image' : 'product1.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'C E Ferulic'},
-    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless '},
+    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless Serum '},
     { 'image' : 'product3.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'Pure Pressed Blush'},
     { 'image' : 'product4.png', 'name' : 'VAL BY VALERIE THOMAS', 'subdesc' : 'Pure Pressed Blush'},
     { 'image' : 'product1.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'C E Ferulic'},
-    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless '},
+    { 'image' : 'product2.png', 'name' : 'JUICE BEAUTY', 'subdesc' : 'Phto-Pigments Flawless Serum '},
     { 'image' : 'product3.png', 'name' : 'SKINCEUTICALS', 'subdesc' : 'Pure Pressed Blush'},
   ]
 
