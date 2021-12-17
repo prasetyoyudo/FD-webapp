@@ -20,9 +20,9 @@
             <span class="tagline-editor-section">Curated With Love</span>
         </div>
     </div>
-    <div class="row">
+    <div class="row editor-content">
         <div class="col" *ngFor="let editorData of editorChoices">
-            <div class="card" style="width: 12rem;">
+            <div class="card card-editor" style="width: 12rem;">
                 <img src="../../../assets/team-1.jpg" class="card-img-top" alt="...">
                 <span class="editor-name">{{editorData.editor}}</span>
                 <span class="editor-title">{{editorData.role}}</span>
@@ -61,9 +61,9 @@
             </button>
         </div>
         <div class="col-lg-6 pr-5">
-            <div class="row">
+            <div class="row card-content">
                 <div class="col-lg-4">
-                    <div class="card" style="width: 12rem;">
+                    <div class="card" style="width: 11.5rem;">
                         <div class="card-body">
                             <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
                             <p class="card-product-tagline">Match Skin Type</p>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 12rem;">
+                    <div class="card" style="width: 11.5rem;">
                         <div class="card-body">
                             <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
                             <p class="card-product-tagline">Match Skin Type</p>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 12rem;">
+                    <div class="card" style="width: 11.5rem;">
                         <div class="card-body">
                             <img src="../../../assets/Slide1.JPG" class="img-fluid mb-2" alt="">
                             <p class="card-product-tagline">Match Skin Type</p>
@@ -170,7 +170,7 @@
             <owl-carousel-o [options]="customOptions">
                 <ng-container *ngFor="let review of reviews">
                   <ng-template carouselSlide>
-                    <div class="card" style="width: 20rem; margin-top: 0;">
+                    <div class="card review-card">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -194,7 +194,7 @@
                             <p class="review-comment">{{review.comment}}</p>
                         </div>
                     </div>
-                    <div class="card-body pb-5" style="width: 20rem;">
+                    <div class="card-body pb-5 review-card-body">
                         <img src="../../../assets/team-1.jpg" class="card-img-bot" alt="...">
                         <p class="review-name">{{review.user}}</p>
                         <p class="review-subname">Combination Skin, 25-29 </p>
@@ -220,9 +220,9 @@
             <span class="float-right see-more pr-5">See More ></span>
         </div>
     </div>
-    <div class="row">
+    <div class="row popular-content">
         <div class="col-lg-3" *ngFor="let popularItem of popularItems">
-            <div class="card" style="width: 14rem;">
+            <div class="card " style="width: 14rem;">
                 <div class="card-body">
                     <img src="../../../assets/{{popularItem.image}}" class="img-fluid" alt="">
                     <div class="row">
@@ -231,17 +231,17 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                             </svg>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                             </svg>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
                                 <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
                                 <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
