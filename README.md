@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Starting
 1. Clone This Repository
 2. cd female-daily
-3. NPM i
+3. npm i
 4. ng serve
 
 ## Development server
